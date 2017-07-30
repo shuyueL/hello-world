@@ -1,2 +1,2 @@
 # hello-world
-# Codes for Lintcode/Leetcode questions.
+Codes for Lintcode/Leetcode questions.
