@@ -1,3 +1,8 @@
+/* For a given source string and a target string, you should output the first index(from 0) of target string in source string.
+
+If target does not exist in source, just return -1.*/
+
+// KMP
 class Solution {
 public:
     /**
@@ -42,6 +47,38 @@ public:
             }
             if(j == n){
                 return i-j+1;
+            }
+        }
+        return -1;
+    }
+};
+
+
+
+// traditional way
+class Solution {
+ public:
+    /**
+     * Returns a index to the first occurrence of target in source,
+     * or -1  if target is not part of source.
+     * @param source string to be scanned.
+     * @param target string containing the sequence of characters to match.
+     */
+    int strStr(const char *source, const char *target) {
+        if (source == NULL || target == NULL) {
+            return -1;
+        }
+        int target_size = strlen(target);
+        int source_size = strlen(source);
+        int i, j;
+        for (i = 0; i < source_size - target_size + 1; i++) {
+            for (j = 0; j < target_size; j++) {
+                if (source[i + j] != target[j]) {
+                    break;
+                }
+            }
+            if (j == target_size) {
+                return i;
             }
         }
         return -1;
