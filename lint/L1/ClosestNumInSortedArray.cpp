@@ -1,6 +1,7 @@
-/* 459: Given a target number and an integer array A sorted in ascending order, find the index i in A such that A[i] is closest to the given target.
-
-Return -1 if there is no element in the array. There can be duplicate elements in the array, and we can return any of the indices with same value.*/
+/* 459: Given a target number and an integer array A sorted in ascending order, 
+find the index i in A such that A[i] is closest to the given target.
+Return -1 if there is no element in the array. 
+There can be duplicate elements in the array, and we can return any of the indices with same value.*/
 
 
 class Solution {
