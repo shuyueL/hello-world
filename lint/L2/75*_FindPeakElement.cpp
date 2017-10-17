@@ -33,6 +33,6 @@ public:
                 start = med;
             }
         }
-        return (start+end)/2;
+        return -1;
     }
 }; 
