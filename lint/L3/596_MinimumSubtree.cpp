@@ -27,7 +27,7 @@ public:
     }
 private:
     TreeNode* node = NULL;
-    int minsum;
+    int minsum;//should equal to INT_MAX.
 };
 
 //jiuzhang
