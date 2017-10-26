@@ -1,5 +1,6 @@
 /*Given a binary tree, find the subtree with maximum average. Return the root of the subtree.*/
 
+//learn from jiuzhang
 class ResultType {
 public:
     int sum,size;
